@@ -1,9 +1,9 @@
 name: Gatsby Build and Deploy to GitHub Pages on Push
 
 on:
-push:
-  branches:
-    - master
+  push:
+    branches:
+      - master
 
 jobs:
 build-and-deploy:
