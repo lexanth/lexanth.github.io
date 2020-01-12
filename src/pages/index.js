@@ -31,6 +31,7 @@ const ProjectContainer = styled.section`
   animation-delay: 1s;
 `
 const ProjectsContainer = styled.div`
+  margin-bottom: 30px;
   display: flex;
   flex-wrap: wrap;
   &::after {
