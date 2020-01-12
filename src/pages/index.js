@@ -59,7 +59,7 @@ const SectionTitle = styled.h2`
 `
 
 const ImageLink = styled.a`
-  text-align: center;
+  align-self: center;
 `
 
 const ProjectComponent = ({ project }) => (
