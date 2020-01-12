@@ -61,10 +61,12 @@ const SectionTitle = styled.h2`
 const ProjectComponent = ({ project }) => (
   <ProjectContainer>
     {project.frontmatter.image && (
-      <ProjectImage
-        src={project.frontmatter.image.publicURL}
-        alt={project.frontmatter.title}
-      />
+      <a href={project.frontmatter.image.publicURL}>
+        <ProjectImage
+          src={project.frontmatter.image.publicURL}
+          alt={project.frontmatter.title}
+        />
+      </a>
     )}
     <h3>{project.frontmatter.title}</h3>
     <div dangerouslySetInnerHTML={{ __html: project.html }}></div>
