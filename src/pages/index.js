@@ -28,6 +28,7 @@ const ProjectContainer = styled.section`
   color: #0b0c0c;
   animation: ${appear} 1s;
   animation-fill-mode: both;
+  animation-delay: 1s;
 `
 const ProjectsContainer = styled.div`
   display: flex;
@@ -42,7 +43,20 @@ const ProjectImage = styled.img`
   object-fit: contain;
 `
 
-const SectionTitle = styled.h2``
+const fadeIn = keyframes`
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+`
+
+const SectionTitle = styled.h2`
+  animation: ${fadeIn} 0.5s;
+  animation-fill-mode: both;
+  animation-delay: 0.5s;
+`
 
 const ProjectComponent = ({ project }) => (
   <ProjectContainer>

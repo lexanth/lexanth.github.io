@@ -2,10 +2,23 @@ import { Link } from 'gatsby'
 import PropTypes from 'prop-types'
 import React from 'react'
 import styled from '@emotion/styled'
+import { keyframes } from '@emotion/core'
+
+const slideIn = keyframes`
+  from {
+    transform: translateY(-100px);
+  }
+  to {
+    transform: translateY(0px);
+  }
+`
 
 const HeaderContainer = styled.header`
   margin-bottom: 1.45rem;
   background-color: black;
+  animation: ${slideIn} 0.5s;
+  animation-fill-mode: both;
+  height: 100px;
 `
 
 const TitleContainer = styled.div`
