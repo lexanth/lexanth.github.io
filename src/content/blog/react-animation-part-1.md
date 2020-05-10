@@ -14,6 +14,8 @@ A major challenge with web animations is often performance. End users are very l
 
 I have two preferred techniques for adding animation: CSS animations and React Spring. There are others which I'll touch on at the end.
 
+_Note that these techniques are all about React for the web, they don't apply to React Native._
+
 ## CSS Animations
 When writing CSS for my React apps, I prefer to use `styled-components`. CSS-in-JS makes a lot of sense to me, I like to keep all the code for delivering something in the same place if possible, so I don't see an immediate need to split it into a separate file based on technology. I also find that declaring everything effectively as a component encourages me to reuse bits more than e.g. CSS modules. And it just works. But everything I talk about in the rest of this would work with a different CSS-in-JS solution or separate CSS files.
 
@@ -146,14 +148,12 @@ Good for:
 * Animating in and out
 
 Less good for:
-* Interruptible transitions
 * Coordinating animations between elements
 * Realistic motion
 
 Pure CSS animations are great for high performance, and relatively simple transitions. But there have been a few gaps in what we can achieve with them:
-* Interruptible animations
 * Animations coordinated between elements
 * Realistic motion (ish)
 * Animations driven by numeric/continuous values, rather than discrete values.
 
-For these, we'll need to break out into JavaScript-land, which we'll do in part 2!
+For these, we'll need to break out into JavaScript-land, which we'll do in [part 2](/blog/react-animation-part-2)!
