@@ -5,6 +5,7 @@ module.exports = {
     author: `Alex Anthony`,
   },
   plugins: [
+    'gatsby-plugin-twitter',
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
@@ -30,6 +31,12 @@ module.exports = {
           {
             resolve: `gatsby-remark-prismjs`,
           },
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              maxWidth: 800,
+            },
+          },
         ],
       },
     },
@@ -46,7 +53,7 @@ module.exports = {
       },
     },
     'gatsby-plugin-emotion',
-    `gatsby-plugin-catch-links`
+    `gatsby-plugin-catch-links`,
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,

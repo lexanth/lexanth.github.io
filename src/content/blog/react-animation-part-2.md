@@ -1,7 +1,7 @@
 ---
 title: "Animation in React - Tools - Part 2"
 date: 2020-05-10
-except: JavaScript tools for animations in React
+excerpt: JavaScript tools for animations in React
 ---
 
 In [Part 1](/blog/react-animation-part-1), we looked at CSS animation techniques, and how to use them in a CSS-in-JS React world. But we identified a few limitations of this approach, which leads us to need some JavaScript tools in our armoury. The limitations were:
@@ -80,7 +80,8 @@ The CSS timing functions can allow us relatively close to spring-based physics f
 
 In JavaScript-land, we can do the actual maths behind a spring.
 
-### Numeric values
+###
+ Numeric values
 Imagine we're building a progress bar component, where we expect the progress updates to be "blocky", but we don't want to just jump directly from one value to another.
 
 ```js
