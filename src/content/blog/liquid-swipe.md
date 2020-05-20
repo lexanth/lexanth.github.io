@@ -1,7 +1,7 @@
 ---
 title: "Animation in React - LiquidSwipe"
 date: 2020-05-19
-excerpt: JavaScript tools for animations in React
+excerpt: Recreating the LiquidSwipe animation in React for the web.
 ---
 
 One of my favourite things to do to push my React skills and to try out new things is to try to reproduce bits of UI that I see on the internet, particularly animations. I find that a lot of React tutorials, particularly animation ones, cover basics, but not the bits that are used in real apps, so I like to share what I find!
